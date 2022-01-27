@@ -4,7 +4,7 @@ import PhotoProfile from "../Assets/photo-profile.jpg";
 const Headline = () => {
 	return (
 		<div className="headline">
-			<img src={PhotoProfile} alt="profile photo" width="200px" />
+			<img src={PhotoProfile} alt="profile photo" />
 			<div className="title">
 				<h1>Giannis Koutoulogenis</h1>
 				<p>Software Engineer</p>

@@ -1,8 +1,10 @@
 import React from "react";
+import VolunteeringCover from "../Assets/volunteering.jpg";
 
 const Volunteering = () => {
 	return (
 		<div className="volunteering">
+			<img src={VolunteeringCover} alt="A picture with the text 'TEAM'" />
 			<h1>Volunteering</h1>
 			<ul className="list-container">
 				<li>Logistics Coordinator @ TEDxPatras</li>
