@@ -1,0 +1,63 @@
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/mixins";
+
+body {
+	font-family: $font-primary, $font-generic;
+}
+
+.headline {
+	@include clearFix();
+
+	background-color: $color-background;
+	padding: 3rem 10rem 1rem;
+
+	p {
+		margin: 0;
+	}
+	.title {
+		h1 {
+			font-weight: $font-heavy;
+			margin-bottom: 0.5rem;
+		}
+		p {
+			text-align: center;
+			font-size: 20px;
+		}
+	}
+	.summary {
+		h2 {
+			font-size: 20px;
+			padding-top: 1rem;
+		}
+	}
+	img {
+		float: left;
+		padding-right: 1rem;
+		border-radius: 15px 50px 30px;
+	}
+}
+
+.experience {
+	background-color: $color-secondary;
+	padding: 1rem 10rem;
+	color: white;
+}
+
+.education {
+	background-color: $color-primary;
+	padding: 1rem 10rem;
+	color: white;
+}
+
+.volunteering {
+	background-color: $color-background;
+	padding: 1rem 10rem;
+	color: $color-secondary;
+}
+
+.footer {
+	background-color: $color-light-background;
+	padding: 1rem 10rem;
+	color: $color-secondary;
+}

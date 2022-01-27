@@ -1,0 +1,75 @@
+body {
+  font-family: "Roboto Mono", "monospace";
+}
+
+.headline {
+  background-color: #f7c548;
+  padding: 3rem 10rem 1rem;
+}
+
+.headline:before, .headline:after {
+  content: " ";
+  display: table;
+}
+
+.headline:after {
+  display: block;
+  clear: both;
+  height: 1px;
+  margin-top: -1px;
+  visibility: hidden;
+}
+
+.headline {
+  *zoom: 1;
+}
+
+.headline p {
+  margin: 0;
+}
+
+.headline .title h1 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.headline .title p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.headline .summary h2 {
+  font-size: 20px;
+  padding-top: 1rem;
+}
+
+.headline img {
+  float: left;
+  padding-right: 1rem;
+  border-radius: 15px 50px 30px;
+}
+
+.experience {
+  background-color: #255957;
+  padding: 1rem 10rem;
+  color: white;
+}
+
+.education {
+  background-color: #437c90;
+  padding: 1rem 10rem;
+  color: white;
+}
+
+.volunteering {
+  background-color: #f7c548;
+  padding: 1rem 10rem;
+  color: #255957;
+}
+
+.footer {
+  background-color: #eeebd3;
+  padding: 1rem 10rem;
+  color: #255957;
+}
+/*# sourceMappingURL=main.css.map */
