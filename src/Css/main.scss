@@ -16,6 +16,8 @@ li {
 
 	background-color: $color-background;
 	padding: 3rem 10rem 1rem;
+	display: flex;
+	justify-content: center;
 
 	p {
 		margin: 0;
@@ -45,14 +47,45 @@ li {
 }
 
 .experience {
-	@include clearFix();
+	// @include clearFix();
 
 	background-color: $color-secondary;
-	padding: 1rem 10rem;
 	color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+
+	.container-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		.list-entries {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.entry-item {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				padding-top: 1.5rem;
+				column-gap: 10px;
+
+				.duration {
+					width: 300px;
+					text-align: left;
+				}
+			}
+		}
+	}
 
 	img {
-		float: right;
+		// float: right;
+		// grid-column-start: 1;
+		// grid-column-end: 1;
 		width: 300px;
 		margin-left: 2rem;
 		border-radius: 10px;
@@ -60,33 +93,68 @@ li {
 }
 
 .education {
-	@include clearFix();
+	// @include clearFix();
 
 	background-color: $color-primary;
-	padding: 1rem 10rem;
 	color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	.container-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		.list-entries {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.entry-item {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				padding-top: 1.5rem;
+				column-gap: 10px;
+
+				.duration {
+					width: 300px;
+					text-align: right;
+				}
+			}
+		}
+	}
 
 	img {
-		float: left;
+		// float: left;
 		width: 300px;
 		margin-right: 2rem;
 		border-radius: 10px;
 	}
-
-	ul {
-		list-style-type: none;
-		li::before {
-			content: "→ ";
-		}
-	}
 }
 
 .volunteering {
-	@include clearFix();
+	// @include clearFix();
 
 	background-color: $color-background;
-	padding: 1rem 10rem;
 	color: $color-secondary;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+
+	.container-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		.list-container {
+			padding: 0;
+		}
+	}
 
 	img {
 		float: right;
@@ -114,8 +182,13 @@ li {
 	}
 }
 
+.section {
+	padding: 2rem 10rem;
+}
+
 .footer {
 	background-color: $color-light-background;
 	padding: 1rem 10rem;
 	color: $color-secondary;
+	text-align: center;
 }
